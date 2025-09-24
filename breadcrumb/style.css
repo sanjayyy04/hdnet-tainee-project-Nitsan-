@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container3 img {
+    width: 100%;
+    height: 100vh;
+    filter: blur(3px);
+}
+
+.container3-text .path {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    font-size: 20px;
+    top: -72px;
+}
+
+.container3-text .path a,
+p {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.path a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    background-color: red;
+    width: 30%;
+    height: 2px;
+    transition: width .3s ease;
+}
+
+.path a:hover::after {
+    width: 100%;
+}
+
+.container3 div {
+    position: absolute;
+    top: 120px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.container3 div p {
+    font-size: 30px;
+    margin-bottom: -60px;
+    margin-top: 81px;
+}
+
+.container3 div>h1 {
+    font-size: 70px;
+    margin-bottom: -42px;
+}
+
+.container3-text {
+    /* background-color: pink; */
+    max-width: 72%;
+    margin-left: 8%;
+}
+
+.btn {
+    background: red;
+    border: none;
+    margin-top: 8%;
+    padding: 12px 24px;
+    font-size: 20px;
+    width: 18%;
+}
+
+.container4 {
+    /* background: deeppink; */
+    color: black;
+    padding: 62px 100px;
+    max-width: 67%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container4 p {
+    color: black;
+    font-size: 20px;
+
+}
+
+.container4 h1 {
+    margin-top: -17px;
+    margin-bottom: 6px;
+    font-size: 70px;
+    border-bottom: 2px solid red;
+}
+
+.container4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    font-size: 20px;
+    list-style: circle;
+    flex-wrap: wrap;
+}
+
+.hero-section-btn button {
+    /* margin-top: 10%; */
+    margin-right: 30px;
+    padding: 11px;
+    border-radius: 7px;
+    font-size: 17px;
+    background: #ffffff;
+    border: 1px solid red;
+    transition: all .2s ease-in;
+
+    &:hover {
+        background-color: red;
+        border: 1px solid rgb(255, 0, 0);
+        color: white;
+
+    }
+}
+
+.container5 {
+    background: #0b0754;
+    height: 61vh;
+    margin: 75px 0;
+    color: white;
+    padding: 83px 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container5 h1 {
+    font-size: 70px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.container5 h1::after {
+    content: " ";
+    position: absolute;
+    bottom: -7px;
+    left: -80px;
+    width: 130%;
+    height: 3px;
+    background-color: red;
+}
+
+.container5 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width : 1025px) {
+    .container3 img {
+        width: 100%;
+        height: 149vh;
+    }
+
+    .container5 h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width : 426px) {
+
+    .container3 div>h1 {
+        font-size: 40px;
+        margin-bottom: -70px;
+    }
+
+    .container3 div p {
+        font-size: 21px;
+        margin-bottom: -33px;
+        margin-top: 81px;
+    }
+
+
+    .btn {
+        width: 44%;
+    }
+
+    .container3 img {
+        height: 100vh;
+    }
+
+    .container4 {
+        color: black;
+        padding: 62px 20px;
+    }
+
+    .container5 {
+        flex-direction: row;
+        padding: 83px 5%;
+    }
+
+    .container5 h1::after {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+
+    color: #0d0d24;
+}
+
+.grey {
+    background-color: rgb(225, 225, 225);
+    color: rgb(2, 2, 2);
+}
+
+.blue {
+    background-color: #0e034e;
+    color: white;
+}
+
+.iconpart-container {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.iconpart-container h4 {
+    font-size: 17px;
+    /* color: #1f1f3f; */
+    margin-bottom: 10px;
+}
+
+.iconpart-container h2 {
+    font-size: 61px;
+    /* font-weight: bold; */
+    /* color: #0d0d24; */
+    margin-top: 3px;
+    margin-bottom: 8px;
+}
+
+.iconpart-container .underline {
+    width: 45%;
+    height: 2px;
+    background-color: #e30613;
+    margin: 10px auto 30px;
+}
+
+.iconpart-container p.subtext {
+    font-size: 17px;
+    /* color: #444; */
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+/* 
+.iconpart-container:nth-child(2) {
+    background-color: #e1e1e1;
+}
+
+.iconpart-container:nth-child(3) .item-card {
+    background: #e1e1e1;
+}
+
+.iconpart-container:nth-child(4) {
+    background-color: #0e034e;
+    color: white;
+}
+
+.iconpart-container:nth-child(4) p.subtext,
+:nth-child(4) h2,
+:nth-child(4) h4,
+:nth-child(4) .item-card p,
+:nth-child(4) .read-more {
+    color: white;
+}
+
+.iconpart-container:nth-child(4) .item-card {
+    background: #ffffff00;
+}
+
+.iconpart-container:nth-child(5) .item-card {
+    background-color: #0e034e;
+    color: white;
+}
+
+ */
+
+.icon-part-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.item-card {
+    /* background: white; */
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.item-card img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.item-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-card p {
+    font-size: 17px;
+    /* color: #555; */
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-size: 17px;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.read-more::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 2px;
+    background: #e30613;
+    transition: width 0.3s ease;
+
+}
+
+.read-more:hover::after {
+    width: 100%;
+
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .icon-part-grid {
+        gap: 20px;
+    }
+
+    .item-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .item-card {
+        width: 100%;
+    }
+
+    .iconpart-container h2 {
+        font-size: 24px;
+    }
+}

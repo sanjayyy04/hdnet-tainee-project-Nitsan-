@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.quate {
+    font-size: 10rem;
+    position: absolute;
+    top: -122px;
+    left: -10%;
+    rotate: 180deg;
+}
+
+.quate-container {
+    background: rgb(230, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6% auto;
+    padding: 155px 30%;
+}
+
+.quate-container>p {
+    position: relative;
+    font-size: 25px;
+}
+
+.quate-img-text {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: -78px;
+}
+
+.hexagon {
+    width: 34px;
+    height: 33.2px;
+    /* = width / √3 * 1.5 to maintain aspect ratio */
+    background: #4CAF50;
+    clip-path: polygon(25% 0%, 75% 0%,
+            100% 50%, 75% 100%,
+            25% 100%, 0% 50%);
+}
+
+@media (max-width: 1025px) {
+    .quate {
+        left: -22%;
+    }
+}
+
+@media (max-width: 769px) {
+    .quate-container {
+        padding: 155px 21%;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .quate-container {
+        padding: 65px 7%;
+    }
+
+    .quate-container>p {
+        font-size: 18px;
+    }
+
+    .quate-img-text {
+
+        gap: 11px;
+        margin-left: 0px;
+    }
+
+    .hexagon {
+        width: 62px;
+    }
+
+    .quate {
+        left: -3%;
+        top: -151px;
+    }
+}
